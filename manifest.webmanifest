@@ -1,0 +1,11 @@
+{
+  "name": "ゆいんくらふと",
+  "short_name": "ゆいんくらふと",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "background_color": "#b9dcf5",
+  "theme_color": "#b9dcf5",
+  "icons": [{ "src": "icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }]
+}

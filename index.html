@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ゆいんくらふと">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#b9dcf5">
+<title>ゆいんくらふと</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="view"></canvas>
+<div id="hud" hidden>
+  <div id="cross"></div>
+  <div id="stick"><i></i></div>
+  <button id="menuBtn" class="round" aria-label="メニュー">≡</button>
+  <div id="right">
+    <button id="flyBtn" class="round">とぶ</button>
+    <button id="downBtn" class="round" hidden>おりる</button>
+    <button id="modeBtn" class="round big">ほる</button>
+    <button id="jumpBtn" class="round big">ジャンプ</button>
+  </div>
+  <div id="bar"></div>
+  <div id="toast" role="status"></div>
+</div>
+<div id="menu">
+  <div class="card">
+    <h1>ゆいんくらふと</h1>
+    <p class="sub">そらの しまを、すきなように つくろう</p>
+    <button id="play" class="primary">あそぶ</button>
+    <div class="row">
+      <button id="export">せかいを ほぞん</button>
+      <button id="import">せかいを よみこむ</button>
+    </div>
+    <div class="row">
+      <button id="sound">おと：あり</button>
+      <button id="fresh">あたらしい せかい</button>
+    </div>
+    <details>
+      <summary>あそびかた</summary>
+      <p><b>iPad</b>　ひだり：あるく／みぎを なぞる：みまわす／タップ：ほる・おく／ながおし：ほりつづける</p>
+      <p><b>パソコン</b>　WASD：あるく／マウス：みまわす／左クリック：ほる／右クリック：おく／スペース：ジャンプ／F：とぶ／1〜9：ブロック</p>
+      <p><b>コントローラー</b>　スティック：あるく・みまわす／A：ジャンプ／RT：ほる／LT：おく／LB・RB：ブロック／Y：とぶ</p>
+    </details>
+    <input id="file" type="file" accept=".json,application/json" hidden>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
